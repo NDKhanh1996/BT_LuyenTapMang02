@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let str1 = prompt('input first string ')
+  let str2 = prompt('input second string ')
+
+  let arr1 = str1.split('')
+  let arr2 = str2.split('')
+  console.log(arr1)
+
+  if(arr1.length === arr2.length){
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== arr2[i]){
+        alert('2 string is different')
+        break;
+      }
+      if (i === arr1.length -1){
+        alert('2 string is same')
+      }
+    }
+  }else {
+    alert('2 string is different')
+  }
+</script>
+
+</body>
+</html>
